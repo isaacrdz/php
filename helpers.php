@@ -6,6 +6,6 @@
 
 		extract($vars);
 		
-		require "$template.php";
+		require "views/$template.tpl.php";
 		
 	}
