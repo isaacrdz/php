@@ -9,3 +9,13 @@
 		require "views/$template.tpl.php";
 		
 	}
+
+	
+	function controller($name)
+	{
+
+		require "controllers/$name.php";
+
+		//header("HTTP/1.0 404 Not Found");
+		//exit ("Pagina no encontrada");
+	}
