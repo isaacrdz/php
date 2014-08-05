@@ -7,13 +7,22 @@
 	require 'config.php';
 	require 'helpers.php';
 
-	//Llamar a los controladores indicado
 
-	if (empty($_GET['url']))
-	{
-		$_GET['url'] = 'home';
-	}
-
-controller($_GET['url']);
+	//Library
+	require 'library/Request.php';
 
 	
+	//Llamar a los controladores indicado
+
+	
+	if (empty ($_GET['url']))
+	{
+		$url = "";
+	}
+	else
+	{
+		$url = $_GET['url'];
+	}
+
+	$request = new Request($url);
+	var_dump($request->getController());
