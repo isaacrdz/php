@@ -10,6 +10,7 @@
 
 	//Library
 	require 'library/Request.php';
+	require 'library/Inflector.php';
 
 	
 	//Llamar a los controladores indicado
@@ -25,4 +26,4 @@
 	}
 
 	$request = new Request($url);
-	var_dump($request->getController());
+	$request->execute();

@@ -4,7 +4,7 @@
 
 		public function indexAction()
 		{
-			
+			exit('Ya volvemos');
 		}
 
 
